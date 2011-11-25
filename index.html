@@ -6,7 +6,7 @@
   <style type="text/css">
     body {
       margin-top: 1.0em;
-      background-color: #a8a8a8;
+      background-color: #DDDDDD;
       font-family: Helvetica, Arial, FreeSans, san-serif;
       color: #000000;
     }
@@ -14,7 +14,7 @@
       margin: 0 auto;
       width: 700px;
     }
-    h1 { font-size: 3.8em; color: #575757; margin-bottom: 3px; }
+    h1 { font-size: 2.8em; color: #575757; margin-bottom: 3px; }
     h1 .small { font-size: 0.4em; }
     h1 a { text-decoration: none }
     h2 { font-size: 1.5em; color: #575757; }
@@ -25,6 +25,79 @@
     pre { background: #000; color: #fff; padding: 15px;}
     hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
     .footer { text-align:center; padding-top:30px; font-style: italic; }
+
+    pre.bookmarklet_javascript {
+      overflow: scroll;
+    }
+    
+    a.bookmarklet {
+      text-decoration: none;
+      font-size: 1.1em !important;
+    }
+
+    ol {
+      padding-left: 28px;
+    }
+    ul {
+      padding-left: 28px;
+    }
+    li {
+      padding-left: 0;
+    }
+
+.button.thoughtbot {
+  background-color: #ee432e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee432e 0%), to(#c63929 50%));
+  /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -moz-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -ms-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: -o-linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  background-image: linear-gradient(top, #ee432e 0%, #c63929 50%, #b51700 50%, #891100 100%);
+  border: 1px solid #951100;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4), 0 1px 3px #333333;
+  color: #fff;
+  font: bold 20px "helvetica neue", helvetica, arial, sans-serif;
+  line-height: 1;
+  padding: 2px 2px 4px 2px;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0.8);
+  width: 150px; }
+  .button.thoughtbot:hover {
+    background-color: #f37873;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f37873 0%), to(#db504d 50%));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -moz-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -ms-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: -o-linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    background-image: linear-gradient(top, #f37873 0%, #db504d 50%, #cb0500 50%, #a20601 100%);
+    cursor: pointer; }
+  .button.thoughtbot:active {
+    background-color: #d43c28;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#d43c28 0%), to(#ad3224 50%));
+    /* Saf4+, Chrome */
+    background-image: -webkit-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -moz-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -ms-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: -o-linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    background-image: linear-gradient(top, #d43c28 0%, #ad3224 50%, #9c1500 50%, #700d00 100%);
+    -webkit-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -moz-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -ms-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    -o-box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4);
+    box-shadow: inset 0px 0px 0px 1px rgba(255, 115, 100, 0.4); }
+    
+
   </style>
 </head>
 
@@ -37,26 +110,22 @@
       <span class="small">by <a href="https://github.com/mutewinter">mutewinter</a></span></h1>
 
     <div class="description">
-      A bookmarklet to look products up on Amazon.com and Newegg.com
+      <p>A boomarklet to look up items from Amazon.com and Newegg.com on <a href="http://camelcamelcamel.com">camelcamelcamel</a> and <a href="http://camelegg.com">camelegg</a>.</p>
     </div>
 
 
-    <h1 id="camelmark">Camelmark</h1>
-
-    <p>A boomarklet to look up items from Amazon.com and Newegg.com on <a href="http://camelcamelcamel.com">camelcamelcamel</a> and <a href="http://camelegg.com">camelegg</a> respectively.</p>
-
-    <h1 id="install">Install</h1>
+    <h1 id="install">Install It</h1>
 
     <h2 id="desktop">Desktop</h2>
 
-    <p>Drag <a href='javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}'>Camelmark</a> into your bookmarks toolbar. You&#8217;re done.</p>
+    <p>Drag <a href='javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}' class='button thoughtbot bookmarklet'>Camelmark</a> into your bookmarks toolbar. You're done.</p>
 
     <h2 id="mobile">Mobile</h2>
 
     <p>Make a new bookmark for this page. Copy this into the URL field.</p>
-      <pre>
-      javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}
-      </pre>
+    <pre class='bookmarklet_javascript'>
+javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}
+    </pre>
     <h1 id="usage">Usage</h1>
     <ol>
       <li>Go to a product on Amazon.com or Newegg.com</li>
@@ -67,12 +136,9 @@
     <ul>
       <li><a href="http://daringfireball.net/">John Gruber</a> for his <a href="http://daringfireball.net/2007/03/javascript_bookmarklet_builder">JavaScript Bookmarklet Builder</a>, which I used to create this bookmarklet.</li>
       <li><a href="http://blog.joshlewis.org/">Josh Lewis</a> for making the <a href="http://blog.joshlewis.org/2009/05/06/saving-money-on-amazon-with-camelcamelcamel/">initial version</a> of this bookmarklet that worked with Amazon</li>
+      <li><a href="https://github.com/ubuwaits/css3-buttons">css3-buttons</a> for the sweet button CSS</li>
     </ul>
     
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/mutewinter/Camelmark">mutewinter/Camelmark</a>
-    </div>
-
   </div>
 
 </body>

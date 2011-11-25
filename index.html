@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset='utf-8'>
-
-  <title>mutewinter/Camelmark @ GitHub</title>
+  <title>Camelmark | A bookmarklet for camelcamelcamel.</title>
 
   <style type="text/css">
     body {
@@ -35,13 +33,6 @@
 
   <div id="container">
 
-    <div class="download">
-      <a href="https://github.com/mutewinter/Camelmark/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/mutewinter/Camelmark/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
     <h1><a href="https://github.com/mutewinter/Camelmark">Camelmark</a>
       <span class="small">by <a href="https://github.com/mutewinter">mutewinter</a></span></h1>
 
@@ -49,35 +40,35 @@
       A bookmarklet to look products up on Amazon.com and Newegg.com
     </div>
 
-    
 
-    
+    <h1 id="camelmark">Camelmark</h1>
 
-    
+    <p>A boomarklet to look up items from Amazon.com and Newegg.com on <a href="http://camelcamelcamel.com">camelcamelcamel</a> and <a href="http://camelegg.com">camelegg</a> respectively.</p>
 
-    
+    <h1 id="install">Install</h1>
 
-    
-      <h2>Authors</h2>
-      <p>Jeremy Mack (jeremy@pileofturtles.com)<br/>      </p>
-    
+    <h2 id="desktop">Desktop</h2>
 
-    
-      <h2>Contact</h2>
-      <p>Jeremy Mack (saint1313@gmail.com)<br/>      </p>
-    
+    <p>Drag <a href='javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}'>Camelmark</a> into your bookmarks toolbar. You&#8217;re done.</p>
 
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/mutewinter/Camelmark/zipball/master">zip</a> or
-      <a href="https://github.com/mutewinter/Camelmark/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/mutewinter/Camelmark</pre>
-    </p>
+    <h2 id="mobile">Mobile</h2>
 
+    <p>Make a new bookmark for this page. Copy this into the URL field.</p>
+      <pre>
+      javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}
+      </pre>
+    <h1 id="usage">Usage</h1>
+    <ol>
+      <li>Go to a product on Amazon.com or Newegg.com</li>
+      <li>Click Camelmark</li>
+      <li>Profit</li>
+    </ol>
+    <h1 id="specialthanksto">Special Thanks To</h1>
+    <ul>
+      <li><a href="http://daringfireball.net/">John Gruber</a> for his <a href="http://daringfireball.net/2007/03/javascript_bookmarklet_builder">JavaScript Bookmarklet Builder</a>, which I used to create this bookmarklet.</li>
+      <li><a href="http://blog.joshlewis.org/">Josh Lewis</a> for making the <a href="http://blog.joshlewis.org/2009/05/06/saving-money-on-amazon-with-camelcamelcamel/">initial version</a> of this bookmarklet that worked with Amazon</li>
+    </ul>
+    
     <div class="footer">
       get the source code on GitHub : <a href="https://github.com/mutewinter/Camelmark">mutewinter/Camelmark</a>
     </div>

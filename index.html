@@ -119,13 +119,13 @@
 
     <h2 id="desktop">Desktop</h2>
 
-    <p>Drag <a href='javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}' class='button thoughtbot bookmarklet'>Camelmark</a> into your bookmarks toolbar. You're done.</p>
+    <p>Drag <a href='javascript:%20((function%20()%20{var%20s%20=%20document.createElement(%27s%27+%27cr%27+%27ipt%27);s.setAttribute(%27type%27,%20%27text/javascript%27);s.setAttribute(%27charset%27,%20%27UTF-8%27);s.setAttribute(%27src%27,%20%27https://raw.github.com/mutewinter/Camelmark/master/camelmark.js%27);document.documentElement.appendChild(s);})());' class='button thoughtbot bookmarklet'>Camelmark</a> into your bookmarks toolbar. You're done.</p>
 
     <h2 id="mobile">Mobile</h2>
 
     <p>Make a new bookmark for this page. Copy this into the URL field.</p>
     <pre class='bookmarklet_javascript'>
-javascript:if%20(document.location.href.match(/amazon/))%20{if%20(document.getElementById(%27ASIN%27))%20{var%20asin%20=%20document.getElementById(%27ASIN%27).value;document.location%20=%20%27http://camelcamelcamel.com/product/%27%20+%20asin;}%20else%20{alert(%22No%20ASIN%20found%20on%20this%20amazon%20page,%20make%20sure%20you%27re%20on%20a%20product%20page%22);}}%20else%20if%20(document.location.href.match(/newegg/))%20{var%20productID;if%20(productID%20=%20document.location.href.match(/=(.*)$/)[1])%20{document.location%20=%20%27http://camelegg.com/product/%27%20+%20productID;}%20else%20{alert(%27No%20product%20ID%20found%20at%20end%20of%20URL.%27);}}%20else%20{alert(%27Camelmark%20only%20works%20on%20Amazon.com%20and%20Newegg.com,%20sorry!%27);}
+javascript:%20((function%20()%20{var%20s%20=%20document.createElement(%27s%27+%27cr%27+%27ipt%27);s.setAttribute(%27type%27,%20%27text/javascript%27);s.setAttribute(%27charset%27,%20%27UTF-8%27);s.setAttribute(%27src%27,%20%27https://raw.github.com/mutewinter/Camelmark/master/camelmark.js%27);document.documentElement.appendChild(s);})());
     </pre>
     <h1 id="usage">Usage</h1>
     <ol>

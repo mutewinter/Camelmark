@@ -2,6 +2,9 @@ if (document.location.href.match(/amazon/)) {
   if (document.getElementById('ASIN')) {
     var asin = document.getElementById('ASIN').value;
     document.location = 'http://camelcamelcamel.com/product/' + asin;
+  }  else if (document.getElementsByName('a')[0]) {
+    var asin = document.getElementsByName('a')[0].value
+    document.location = 'http://camelcamelcamel.com/product/' + asin;
   } else {
     alert("No ASIN found on this amazon page, make sure you're on a product page");
   }

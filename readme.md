@@ -2,6 +2,8 @@
 
 A boomarklet to look up items from Amazon.com and Newegg.com on [camelcamelcamel](http://camelcamelcamel.com) and [camelegg](http://camelegg.com) respectively.
 
+**[GitEgo - GitHub Stats for Camelmark](http://gitego.com/mutewinter/Camelmark)**
+
 # Install
 
 See [Camelmark's page on GitHub](http://mutewinter.github.com/Camelmark).

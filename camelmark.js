@@ -1,7 +1,7 @@
 if (document.location.href.match(/amazon/)) {
   if (document.getElementById('ASIN')) {
     var asin = document.getElementById('ASIN').value;
-    window.open('http://camelcamelcamel.com/product/' + asin);
+    document.location = 'http://camelcamelcamel.com/product/' + asin;
   }  else if (document.getElementsByName('a')[0]) {
     var asin = document.getElementsByName('a')[0].value;
     document.location = 'http://camelcamelcamel.com/product/' + asin;
@@ -11,7 +11,7 @@ if (document.location.href.match(/amazon/)) {
 } else if (document.location.href.match(/newegg/)) {
   var productID;
   if ((productID = document.location.href.match(/=(.*)$/)[1])) {
-    window.open('http://camelegg.com/product/' + productID);
+    document.location = 'http://camelegg.com/product/' + productID;
   } else {
     alert('No product ID found at end of URL.');
   }
